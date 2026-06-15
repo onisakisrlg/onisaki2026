@@ -95,7 +95,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between bg-transparent transition-colors ${hidden ? "pointer-events-none" : ""}`}
     >
       <div className={`font-sans font-black text-2xl tracking-[0.25em] cursor-pointer transition-colors flex items-center ${isDark ? "text-white hover:text-gray-300" : "text-black hover:text-gray-700"}`}>
-        ONISAKI<span className="text-sm ml-2 tracking-widest font-black">株式会社</span>
+        onisaki
       </div>
 
       <div className="flex items-center gap-8 ml-auto">
