@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Japan",
+  "description": "An immersive Japanese technology company landing page, featuring an interactive hexagon grid and digital pixel aurora.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
