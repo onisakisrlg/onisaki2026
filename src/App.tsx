@@ -9,6 +9,8 @@ import HexagonSection from "./components/HexagonSection";
 import PixelSection from "./components/PixelSection";
 import Footer from "./components/Footer";
 import TokushohoPage from "./components/TokushohoPage";
+import PrivacyPolicyPage from "./components/PrivacyPolicyPage";
+import TermsPage from "./components/TermsPage";
 import { ThemeContext, Theme, LanguageContext, Language } from "./theme";
 
 export default function App() {
@@ -22,7 +24,7 @@ export default function App() {
     return hour >= 6 && hour < 18 ? "light" : "dark";
   });
   const [language, setLanguage] = useState<Language>("日本語");
-  const [route, setRoute] = useState<"home" | "tokushoho">("home");
+  const [route, setRoute] = useState<"home" | "tokushoho" | "privacy" | "terms">("home");
 
   const toggleTheme = () => {
     setTheme((prev) => {
@@ -47,12 +49,30 @@ export default function App() {
       if (
         hash.includes("tokusho") || 
         hash.includes("sota") ||
+        hash.includes("legal") ||
         search.includes("tokusho") ||
         search.includes("sota") ||
+        search.includes("legal") ||
         path.includes("tokusho") ||
-        path.includes("sota")
+        path.includes("sota") ||
+        path.includes("legal")
       ) {
         setRoute("tokushoho");
+      } else if (
+        hash.includes("privacy") ||
+        search.includes("privacy") ||
+        path.includes("privacy")
+      ) {
+        setRoute("privacy");
+      } else if (
+        hash.includes("terms") ||
+        hash.includes("tos") ||
+        search.includes("terms") ||
+        search.includes("tos") ||
+        path.includes("terms") ||
+        path.includes("tos")
+      ) {
+        setRoute("terms");
       } else {
         setRoute("home");
       }
@@ -83,12 +103,24 @@ export default function App() {
         "English": "Act on Specified Commercial Transactions Disclosure | ONISAKI Co., Ltd.",
         "简体中文": "特定商业交易法公示 | ONISAKI株式会社",
         "繁體中文": "特定商業交易法公示 | ONISAKI株式會社",
+      },
+      privacy: {
+        "日本語": "プライバシーポリシー | ONISAKI株式会社",
+        "English": "Privacy Policy | ONISAKI Co., Ltd.",
+        "简体中文": "隐私政策 | ONISAKI株式会社",
+        "繁體中文": "隱私政策 | ONISAKI株式會社",
+      },
+      terms: {
+        "日本語": "利用規約 | ONISAKI株式会社",
+        "English": "Terms of Service | ONISAKI Co., Ltd.",
+        "简体中文": "服务条款 | ONISAKI株式会社",
+        "繁體中文": "服務條款 | ONISAKI株式會社",
       }
     };
 
     const descriptions = {
       home: {
-        "日本語": "ONISAKI株式会社は、東京銀座を拠点とするプロフェッショナルなWeb開発・システムデザイン企業です。最先端技術（React/Next.js/Node.js等）を駆使し、コーポレートサイト、大規模WEBアプリ、グローバル多言語開発を支援します。",
+        "日本語": "ONISAKI株式会社は、東京銀座を拠点とするプロフェッショナルなWeb開発・システムデザイン企業です。最先端技術（React/Next.js/Node.js等）を駆使し、コーポレートサイト、大規模WEBアプリ、グローバル多言語开发を支援します。",
         "English": "ONISAKI Co., Ltd. is a professional web development and systems integration agency located in Ginza, Tokyo. We specialize in high-end websites, full-stack applications, and localized design solutions.",
         "简体中文": "ONISAKI株式会社是位于日本东京银座的专业网页、软件开发与系统集成公司。我们深耕移动应用、高防独立服务器技术并交付定制化的跨国系统与企业网站。",
         "繁體中文": "ONISAKI株式會社是位於日本東京銀座的專業網頁、軟體開發與系統集成公司。我們深耕移動應用、高防獨立服務器技術並交付定制化的跨國系統與企業網站。"
@@ -98,6 +130,18 @@ export default function App() {
         "English": "Commercial legal transaction disclosures concerning ONISAKI Co., Ltd.'s custom contract web dev processes, billing policies, and warranty scopes.",
         "简体中文": "ONISAKI株式会社特定商业交易法公示。包括定制系统估价标准、首付付款及中途解约规则说明等法定合规公开事项。",
         "繁體中文": "ONISAKI株式會社特定商業交易法公示。包括定制系統估價標準、首付付款及中途解約規則說明等法定合規公開事項。"
+      },
+      privacy: {
+        "日本語": "ONISAKI株式会社の個人情報の取り扱いおよび保護に関する基本方針について規定したプライバシーポリシーページです。",
+        "English": "Privacy Policy rules and guidelines concerning user privacy security and personal data collection at ONISAKI Co., Ltd.",
+        "简体中文": "ONISAKI株式会社个人隐私信息保护及数据流转合规声明公示。",
+        "繁體中文": "ONISAKI株式會社個人隱私資訊保護及數據流轉合規聲明公示。"
+      },
+      terms: {
+        "日本語": "ONISAKI株式会社の受託Web制作・ITサービス提供一般規約を規定した利用規約ページです。納品、検収、著作権等についてご説明いたします。",
+        "English": "Terms of Service and legal specifications governing ONISAKI Co., Ltd.'s custom contract web dev processes, billing policies, and warranty scopes.",
+        "简体中文": "ONISAKI株式会社受托网页及应用软件开发通用条款、版权划拨、验收流程以及中途解约规定等法定合规公开事项。",
+        "繁體中文": "ONISAKI株式會社受託網頁及應用軟體開發通用條款、版權劃撥、驗收流程以及中途解約規定等法定合規公開事項。"
       }
     };
 
@@ -127,6 +171,10 @@ export default function App() {
         <main className="min-h-screen font-sans selection:bg-cyan-500/30 transition-colors duration-500">
           {route === "tokushoho" ? (
             <TokushohoPage />
+          ) : route === "privacy" ? (
+            <PrivacyPolicyPage />
+          ) : route === "terms" ? (
+            <TermsPage />
           ) : (
             <>
               <Navbar />
