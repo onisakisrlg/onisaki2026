@@ -165,6 +165,12 @@ const COMPANY_NAME_TRANSLATIONS: Record<string, Record<string, string>> = {
     "简体中文": "小松株式会社",
     "繁體中文": "小松株式會社",
   },
+  "株式会社初禾": {
+    "日本語": "株式会社初禾",
+    "English": "Chuhe Co., Ltd.",
+    "简体中文": "株式会社初禾",
+    "繁體中文": "株式会社初禾",
+  },
   "COMING SOON": {
     "日本語": "COMING SOON",
     "English": "COMING SOON",
@@ -217,6 +223,7 @@ const WORKS_ITEMS = [
   { name: "早興業株式会社", url: "https://hayakougyou.com/", tags: ["建設", "工業", "コーポレート"] },
   { name: "EXIST合同会社", url: "https://exist-reform.jp/", tags: ["リフォーム", "住宅改修", "リノベーション"] },
   { name: "小松株式会社", url: "https://komatsujapan.co.jp/", tags: ["貿易", "グローバル", "設備"] },
+  { name: "株式会社初禾", url: "https://chuhechuhe-kappa.vercel.app/", tags: ["コーポレート", "グローバル", "WEB開発"] },
   { name: "COMING SOON", url: "#", tags: ["制作中", "新プロジェクト"] },
 ];
 

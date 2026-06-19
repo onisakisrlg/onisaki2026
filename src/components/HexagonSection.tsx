@@ -377,7 +377,7 @@ export default function HexagonSection() {
     let rows = Math.ceil(height / rowHeight) + 2;
 
     // Unified animation velocity
-    const getVelocity = () => 0.0015 + Math.random() * 0.0025;
+    const getVelocity = () => 0.003 + Math.random() * 0.004;
 
     let gridCells = Array.from({ length: cols * rows }, () => ({
       alpha: Math.random(),

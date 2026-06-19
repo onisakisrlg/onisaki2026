@@ -1,6 +1,6 @@
 {
-  "name": "Nexus Japan",
-  "description": "An immersive Japanese technology company landing page, featuring an interactive hexagon grid and digital pixel aurora.",
+  "name": "ONISAKI株式会社",
+  "description": "東京都中央区銀座を拠点とするプロフェッショナルなWeb開発・システムデザイン企業「ONISAKI株式会社」のポートフォリオサイト。",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
