@@ -96,9 +96,9 @@ export default function Navbar() {
       transition={{ duration: 0.4, ease: "easeInOut" }}
       className={`fixed top-0 left-0 w-full z-50 px-8 py-6 flex flex-col transition-all duration-300 ${
         mobileMenuOpen
-          ? (isDark ? "bg-[#02040a]/95 border-b border-white/5 shadow-2xl" : "bg-white/95 border-b border-black/5 shadow-xl")
+          ? (isDark ? "bg-[#02040a]/98 border-b border-white/5 shadow-2xl" : "bg-white/98 border-b border-black/5 shadow-xl")
           : "bg-transparent border-b border-transparent"
-      } backdrop-blur-md ${hidden && !mobileMenuOpen ? "pointer-events-none" : ""}`}
+      } ${hidden && !mobileMenuOpen ? "pointer-events-none" : ""}`}
     >
       <div className="w-full flex items-center justify-between">
         <div 

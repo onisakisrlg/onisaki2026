@@ -256,8 +256,8 @@ export default function TokushohoPage() {
       isDark ? "bg-[#02040a] text-gray-200" : "bg-[#f8fafc] text-gray-800"
     }`}>
       {/* Navbar for standalone page */}
-      <header className={`sticky top-0 left-0 w-full z-40 px-6 py-4 flex items-center justify-between border-b backdrop-blur-md transition-colors duration-500 ${
-        isDark ? "bg-[#02040a]/80 border-white/5" : "bg-[#f8fafc]/80 border-black/5"
+      <header className={`sticky top-0 left-0 w-full z-40 px-6 py-4 flex items-center justify-between border-b transition-colors duration-500 bg-transparent ${
+        isDark ? "border-white/5" : "border-black/5"
       }`}>
         <div className="flex items-center gap-4">
           <button
