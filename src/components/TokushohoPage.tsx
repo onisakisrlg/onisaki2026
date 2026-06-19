@@ -352,7 +352,7 @@ export default function TokushohoPage() {
                 </div>
                 <div className={`p-4 rounded-xl border md:col-span-2 ${isDark ? "bg-white/[0.02] border-white/5" : "bg-black/[0.02] border-black/5"}`}>
                   <span className={`block font-bold mb-1.5 flex items-center gap-1 ${isDark ? "text-gray-400" : "text-gray-600"}`}><MapPin size={12} />{activeLang.location}</span>
-                  <span className={`font-semibold ${isDark ? "text-white" : "text-black"}`}>東京都中央区銀座１丁目２２番１１号 銀座大竹ビジデンス２Ｆ</span>
+                  <span className={`font-semibold ${isDark ? "text-white" : "text-black"}`}>〒104-0061 東京都中央区銀座１丁目２２番１１号 銀座大竹ビジデンス２Ｆ</span>
                 </div>
                 <div className={`p-4 rounded-xl border ${isDark ? "bg-white/[0.02] border-white/5" : "bg-black/[0.02] border-black/5"}`}>
                   <span className={`block font-bold mb-1.5 flex items-center gap-1 ${isDark ? "text-gray-400" : "text-gray-600"}`}><Phone size={12} />{activeLang.phone}</span>

@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
       contactTitle: "8. お問い合わせ窓口",
       contactDesc: "当社の個人情報の取り扱いに関するご意見、ご質問、また開示等のご請求は、以下の窓口までご連絡ください。",
       contactCompany: "ONISAKI株式会社 個人情報相談窓口",
-      contactAddr: "東京都中央区銀座１丁目２２番１１号 銀座大竹ビジデンス２Ｆ",
+      contactAddr: "〒104-0061 東京都中央区銀座１丁目２２番１１号 銀座大竹ビジデンス２Ｆ",
       contactEmail: "support@onisaki.com",
       copyright: "© ONISAKI All Rights Reserved. Privacy Policy"
     },
@@ -111,7 +111,7 @@ export default function PrivacyPolicyPage() {
       contactTitle: "8. 个人隐私垂询信箱",
       contactDesc: "如果您对本隐私条例有任何异议、改良建议或需要主张客户隐私权利，敬请发信至以下联络地址：",
       contactCompany: "ONISAKI株式会社 个人信息保护部",
-      contactAddr: "东京都中央区银座1丁目22番11号 银座大竹大厦2F",
+      contactAddr: "〒104-0061 东京都中央区银座1丁目22番11号 银座大竹大厦2F",
       contactEmail: "support@onisaki.com",
       copyright: "© ONISAKI 版权所有 | 隐私政策"
     },
@@ -144,7 +144,7 @@ export default function PrivacyPolicyPage() {
       contactTitle: "8. 個人隱私垂詢信箱",
       contactDesc: "如果您對本隱私條例有任何異議、改良建議或需要主張客戶隱私權利，敬請發信至以下聯絡地址：",
       contactCompany: "ONISAKI株式會社 個人資訊保護部",
-      contactAddr: "東京都中央區銀座1丁目22番11號 銀座大竹大廈2F",
+      contactAddr: "〒104-0061 東京都中央區銀座1丁目22番11號 銀座大竹大廈2F",
       contactEmail: "support@onisaki.com",
       copyright: "© ONISAKI 版權所有 | 隱私政策"
     }

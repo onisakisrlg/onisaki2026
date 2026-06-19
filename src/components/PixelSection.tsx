@@ -648,7 +648,7 @@ export default function PixelSection() {
                {/* LINE BUTTON */}
                <motion.a
                  variants={itemVariants}
-                 href="https://line.me/R/ti/p/@220pvxsl?oat_content=url&ts=06131119"
+                 href="https://lin.ee/zy69vhS"
                  target="_blank"
                  rel="noreferrer"
                  className={`group/btn rounded-2xl p-6 md:p-8 border backdrop-blur-md transition-all duration-500 relative flex flex-col gap-5 text-left shadow-lg cursor-pointer ${

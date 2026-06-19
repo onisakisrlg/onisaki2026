@@ -109,7 +109,7 @@ export default function Navbar() {
               {item.sub[currentLang as keyof typeof item.sub]}
             </a>
           ))}
-          <a href="https://line.me/R/ti/p/@220pvxsl?oat_content=url&ts=06131119" target="_blank" rel="noreferrer" className={`hover:text-green-500 transition-colors duration-300 flex items-center gap-1.5 border border-current rounded-full px-4 py-1.5 ml-2 text-[10px] font-medium tracking-[0.2em] uppercase`}>
+          <a href="https://lin.ee/zy69vhS" target="_blank" rel="noreferrer" className={`hover:text-green-500 transition-colors duration-300 flex items-center gap-1.5 border border-current rounded-full px-4 py-1.5 ml-2 text-[10px] font-medium tracking-[0.2em] uppercase`}>
             <MessageCircle size={14} /> LINE
           </a>
         </div>
